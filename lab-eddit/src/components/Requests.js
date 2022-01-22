@@ -60,6 +60,7 @@ import swal from "sweetalert"
       .then((res) => {
         alert("Post Criado com sucesso")
         clear()
+        
       })
       .catch((err) => {
        
