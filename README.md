@@ -1,8 +1,8 @@
-###Projeto Lab-Eddit 🤖
+### Projeto Lab-Eddit 🤖
 
 Projeto Desenvolvido para o curso WEb-Full stack da Labenu no modulo Front-end
 
-###Desenvolvido por Larissa Lanes
+### Desenvolvido por Larissa Lanes
 
 Aplicação React aprimorando conhecimentos em integração com Libs.
 Projeto Resposivo e  desenvolvido para Web, inspirado na rede social Reddit e design system inpirado na Rede social Twiiter.
@@ -15,41 +15,41 @@ Link da API
 
 https://documenter.getpostman.com/view/9731983/U16eu7nT
 
-###Desenvolvimento
+### Desenvolvimento
 
 🖱️Funcionalidades: 
 
-*Projeto com telas responsivas.
-*Troca de telas utilizando a lib React Router.
-*Checkpoints da Appi em funcionamento - Login, SignUp, getPots, getPostComments, createPosts, createComments, createPotsVote, createCommentVote, changePostVote, changeCommentsVote, deleteCommentVote, deletePotsVote.
-*Tela Loading com animação.
-*Comentários nos posts e posts Próprios.
+* Projeto com telas responsivas.
+* Troca de telas utilizando a lib React Router.
+* Checkpoints da Appi em funcionamento - Login, SignUp, getPots, getPostComments, createPosts, createComments, createPotsVote, createCommentVote, changePostVote, changeCommentsVote, deleteCommentVote, deletePotsVote.
+* Tela Loading com animação.
+* Comentários nos posts e posts Próprios.
 
-###Construído com: 🛠️
+### Construído com: 🛠️
 
 REACT.JS Libs React:
 
-*axios
+* axios
 
-*styled.components
+* styled.components
 
-*React Router versão 5.2.0
+* React Router versão 5.2.0
 
 LIBS EXTERNAS :
 
-*Lottie
+* Lottie
 
-*SweetAlert
+* SweetAlert
 
-*MaterialUI
+* MaterialUI
 
-###Conhecimentos necessaŕios:
-REACT
-JAVASCRIPT
-HTML5
-CSS3
+### Conhecimentos necessaŕios:
+* REACT
+* JAVASCRIPT
+* HTML5
+* CSS3
 
-###Prints Arts
+### Prints Arts
 
 ![image](https://user-images.githubusercontent.com/91152234/147530378-9c5856de-f0d6-4a19-b4af-307051c7c67a.png)
 
