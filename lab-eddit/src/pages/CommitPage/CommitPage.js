@@ -99,6 +99,10 @@ const CommitPage = () => {
             const firstLetter = commits.username && commits.username.substr(0, 1);
             return commits.username && firstLetter.toUpperCase();
           };
+          function formateDate(){
+            let newDate = new Date(commits.createdAt)
+            return`${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()} - ${newDate.getHours()}:${newDate.getMinutes()}`
+          }
         return(
           <PostsLists>
           <Card key={commits.id } sx={{ maxWidth: 900 }}>
@@ -107,7 +111,7 @@ const CommitPage = () => {
                 <Avatar sx={{ bgcolor: corlorRandom() }} aria-label="recipe">{userFirstLetter()}</Avatar>
               }
               title={commits.username}
-              subheader={commits.createdAt}
+              subheader={formateDate()}
               /> 
               <Typography margin={'20px'} variant="body2" color="text.secondary">
               <h3>{commits.body}</h3>

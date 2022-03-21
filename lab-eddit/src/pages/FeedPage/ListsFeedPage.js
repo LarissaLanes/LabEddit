@@ -8,13 +8,11 @@ import Typography from '@mui/material/Typography';
 import useRequestData from '../../hooks/useRequestData';
 import { url_base } from '../../constants/urls/URL';
 import { goToCommit } from '../../rotes/Coordinator';
-import { useHistory, useParams } from 'react-router';
-// import Loading from "../../components/loading"
+import { useHistory} from 'react-router';
 import QuestionAnswerOutlinedIcon from '@mui/icons-material/QuestionAnswerOutlined';
 import axios from 'axios';
 import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 import ArrowDownwardOutlinedIcon from '@mui/icons-material/ArrowDownwardOutlined';
-// import { useEffect } from 'react';
 import {DivListPost} from "./Styled-Feed"
 
 
@@ -88,11 +86,19 @@ const RecipeReviewCard = () =>  {
     goToCommit(history, id);
   };
 
+  
+
+  
+
   const getPostPeoples = getPosts.map((posts) => {
     const userFirstLetter = () => {
       const firstLetter = posts.username && posts.username.substr(0, 1);
       return posts.username && firstLetter.toUpperCase();
     };
+    function formateDate(){
+      let newDate = new Date(posts.createdAt)
+      return`${newDate.getDate()}/${newDate.getMonth()+1}/${newDate.getFullYear()} - ${newDate.getHours()}:${newDate.getMinutes()}`
+    }
       return(
         <DivListPost>
           <Card key={posts.id } sx={{ maxWidth: 900 }} >
@@ -101,7 +107,7 @@ const RecipeReviewCard = () =>  {
                <Avatar sx={{ bgcolor: corlorRandom() }} aria-label="recipe">{userFirstLetter()}</Avatar>
              }
              title={posts.username}
-             subheader={posts.createdAt}
+             subheader={formateDate()}
                />
                <Typography margin={'20px'} variant="body2" color="text.secondary">
                    <h3>{posts.title}</h3>
